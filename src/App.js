@@ -13,6 +13,9 @@ function App() {
         <div className="cloud-container">
           <div className="cloud-sprite"/>
         </div>
+        <div className="small-cloud-container">
+          <div className="small-cloud-sprite"/>
+        </div>
       </div>
       <div className="Header">
         Branko Bajic
