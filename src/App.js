@@ -1,7 +1,5 @@
 import './App.css';
-import cloud from './assets/fluffy-cloud.png';
 import background from './assets/neon-city.jpg';
-import { TransitionGroup } from 'react-transition-group';
 import './Clouds.css';
 
 
@@ -9,20 +7,12 @@ function App() {
   return (
     <div className="App" style={{ backgroundImage: `url(${background})` }}>
       <div className="Clouds-Section">
-        <div className="Cloud">
-          <div className="shadowed-cloud"/>
+        <div className="shadowed-cloud-container">
+          <div className="shadowed-cloud-sprite"/>
         </div>
-        <div className="Cloud">
-          <div className="cloud"/>
+        <div className="cloud-container">
+          <div className="cloud-sprite"/>
         </div>
-
-        {/* <img 
-          src={cloud} 
-          className="Cloud" 
-          alt="cloud" 
-          height="60%"
-          width="auto"
-        /> */}
       </div>
       <div className="Header">
         Branko Bajic
