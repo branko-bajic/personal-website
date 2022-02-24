@@ -27,6 +27,11 @@
 
 .Body {
   flex: 4;
+  align-items: center;
+  justify-content: end;
+  font-size: calc(20px + 1vmin);
+  color: white;
+  font-family: "Alien Encounters";
 }
 
 .Footer {
@@ -35,6 +40,14 @@
   justify-content: end;
   font-size: calc(20px + 2vmin);
   color: white;
+}
+
+.selectable-option {
+  display: inline-block;
+}
+.selectable-option:hover {
+  cursor: pointer;
+  color: aqua;
 }
 
 @font-face {

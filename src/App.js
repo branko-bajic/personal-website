@@ -22,7 +22,15 @@ function App() {
         <br/>
         Full Stack Software Developer
       </div>
-      <div className="Body" />
+      <div className="Body">
+        <div className="selectable-option">
+          {"> Projects"}
+        </div>
+        <br/>
+        <div className="selectable-option">
+          {"> Contact"}
+        </div>
+      </div>
       <div className="Footer" />
     </div>
   );
