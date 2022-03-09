@@ -33,10 +33,10 @@
 
 @keyframes cloud-slide {
   from {
-    transform: translateX(0vw);
+    transform: translateX(-5vw);
   }
   to {
-    transform: translateX(-130vw);
+    transform: translateX(-110vw);
   }
 }
 
@@ -72,10 +72,10 @@
 
 @keyframes shadowed-cloud-slide {
   from {
-    transform: translateX(0vw);
+    transform: translateX(5vw);
   }
   to {
-    transform: translateX(130vw);
+    transform: translateX(110vw);
   }
 }
 
@@ -115,6 +115,6 @@
     transform: translateX(0vw);
   }
   to {
-    transform: translateX(130vw);
+    transform: translateX(110vw);
   }
 }
