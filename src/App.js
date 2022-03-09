@@ -3,12 +3,11 @@ import './App.css';
 import background from './assets/neon-city.jpg';
 import './Clouds.css';
 
-
 function App() {
-  const MAINMENU = 0;
+  const MAIN_MENU = 0;
   const PROJECTS = 1;
   const CONTACT = 2;
-  const [optionSelected, setOptionSelected] = React.useState(MAINMENU);
+  const [optionSelected, setOptionSelected] = useState(MAIN_MENU);
   return (
     <div className="App" style={{ backgroundImage: `url(${background})` }}>
       <div className="Clouds-Section">
@@ -36,7 +35,7 @@ function App() {
       <div className="Body">
 
         {/* Main Menu */}
-        {optionSelected === MAINMENU &&
+        {optionSelected === MAIN_MENU &&
           <React.Fragment>
             <div className="selectable-option" onMouseUp={() => setOptionSelected(PROJECTS)}>
               {"> Projects <"}
@@ -51,13 +50,13 @@ function App() {
         {/* Projects */}
         {optionSelected === PROJECTS &&
           <React.Fragment>
-            <div className="selectable-option">
-              {"> OSRS Castaway <"}
+            <div className="selectable-option" onMouseUp={() => "location.href='newurl.html';"}>
+              <a>{"> OSRS Castaway <" }</a>
             </div>
             <br/>
             <br/>
-            <div className="selectable-option" onMouseUp={() => setOptionSelected(MAINMENU)}>
-              {"> Back to Main Menu <"}
+            <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
+              {"> Main Menu <"}
             </div>
           </React.Fragment>
         }
@@ -66,16 +65,20 @@ function App() {
         {optionSelected === CONTACT &&
           <React.Fragment>
             <div className="selectable-option">
-              {"> GitHub <"}
+              <a href="https://github.com/branko-bajic" target="_blank">
+                {"> GitHub <"}
+              </a>
             </div>
             <br/>
             <div className="selectable-option">
-              {"> LinkedIn <"}
+              <a href="https://www.linkedin.com/in/branko-bajic/" target="_blank">
+                {"> LinkedIn <"}
+              </a>
             </div>
             <br/>
             <br/>
-            <div className="selectable-option" onMouseUp={() => setOptionSelected(MAINMENU)}>
-              {"> Back to Main Menu <"}
+            <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
+              {"> Main Menu <"}
             </div>
           </React.Fragment>
         }

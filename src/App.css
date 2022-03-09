@@ -50,6 +50,11 @@
   color: aqua;
 }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: inherit;
+}
+
 @font-face {
   font-family: 'Alien Encounters';
   src: url('./assets/alien-encounters-bold-italic-webfont.woff2') format('woff2'),

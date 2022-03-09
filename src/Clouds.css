@@ -27,16 +27,19 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .cloud-container {
-    animation: cloud-slide infinite 20s steps(20, end);
+    animation: cloud-slide infinite 40s steps(20, end);
   }
 }
 
 @keyframes cloud-slide {
-  from {
+  0% {
     transform: translateX(-5vw);
   }
-  to {
+  50% {
     transform: translateX(-110vw);
+  }
+  100% {
+    transform: translateX(-5vw);
   }
 }
 
@@ -66,16 +69,19 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .shadowed-cloud-container {
-    animation: shadowed-cloud-slide infinite 25s steps(25, start);
+    animation: shadowed-cloud-slide infinite 50s steps(25, start);
   }
 }
 
 @keyframes shadowed-cloud-slide {
-  from {
+  0% {
     transform: translateX(5vw);
   }
-  to {
+  50% {
     transform: translateX(110vw);
+  }
+  100% {
+    transform: translateX(5vw);
   }
 }
 
@@ -106,15 +112,18 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .small-cloud-container {
-    animation: small-cloud-slide infinite 40s steps(40, start);
+    animation: small-cloud-slide infinite 80s steps(40, start);
   }
 }
 
 @keyframes small-cloud-slide {
-  from {
+  0% {
     transform: translateX(0vw);
   }
-  to {
+  50% {
     transform: translateX(110vw);
+  }
+  100% {
+    transform: translateX(0vw);
   }
 }
