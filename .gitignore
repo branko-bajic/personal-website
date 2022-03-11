@@ -21,3 +21,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Compiled TS
+dist/
+
+# Compiled css-modules-typescript-loader
+*.css.d.ts

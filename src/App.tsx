@@ -1,7 +1,7 @@
-import React, { useState } from 'react';
-import './App.css';
-import background from './assets/neon-city.jpg';
-import './Clouds.css';
+import React, { useState } from "react";
+import "./Clouds.css";
+import "./App.css";
+const background = require("./assets/neon-city.jpg");
 
 function App() {
   const MAIN_MENU = 0;
@@ -9,7 +9,7 @@ function App() {
   const CONTACT = 2;
   const [optionSelected, setOptionSelected] = useState(MAIN_MENU);
   return (
-    <div className="App" style={{ backgroundImage: `url(${background})` }}>
+    <div className="App" style={{ backgroundImage: `url(${background})`}}>
       <div className="Clouds-Section">
 
         {/* Shadowed Cloud */}
