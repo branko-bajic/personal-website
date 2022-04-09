@@ -37,26 +37,8 @@ function App() {
         {/* Main Menu */}
         {optionSelected === MAIN_MENU &&
           <React.Fragment>
-            <div className="selectable-option" onMouseUp={() => setOptionSelected(PROJECTS)}>
-              {"> Projects <"}
-            </div>
-            <br/>
             <div className="selectable-option" onMouseUp={() => setOptionSelected(CONTACT)}>
               {"> Contact <"}
-            </div>
-          </React.Fragment>
-          }
-
-        {/* Projects */}
-        {optionSelected === PROJECTS &&
-          <React.Fragment>
-            <div className="selectable-option" onMouseUp={() => "location.href='newurl.html';"}>
-              <a>{"> OSRS Castaway <" }</a>
-            </div>
-            <br/>
-            <br/>
-            <div className="selectable-option" onMouseUp={() => setOptionSelected(MAIN_MENU)}>
-              {"> Main Menu <"}
             </div>
           </React.Fragment>
         }
