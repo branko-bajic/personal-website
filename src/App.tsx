@@ -47,7 +47,7 @@ function App() {
         {optionSelected === CONTACT &&
           <React.Fragment>
             <div className="selectable-option">
-              <a href="https://github.com/branko-bajic" target="_blank">
+              <a href="https://github.com/brankoEISI" target="_blank">
                 {"> GitHub <"}
               </a>
             </div>
